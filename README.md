@@ -2,7 +2,7 @@
 
 _From The HowToGraphQL Tutorial Series_
 
-Written by: Maira Bello
+Written by Maira Bello
 
 ### Overview
 
@@ -12,11 +12,11 @@ At a high-level, this will involve working through the basics of how a GraphQL s
 
 Next a database layer will be added allowing us to actually store and persist the data. The database layer is powered by [Prisma](https://www.prisma.io/) and will be connected to our GraphQL server via the [Prisma client](https://www.prisma.io/docs/prisma-client).
 
-Once we have the database connected, our tasks then turn to added more advanced features to our API:
+Once we have the database connected, our tasks then turn to adding more advanced features to our API:
 
-1. Implementing signup / login functionality enabling users to authenticate against the API.
+1. Implementing signup / login functionality which will enable users to authenticate against the API.
 
-- This part will also provide automated validation and checking access privileges of our users for certain API operations.
+   - This part will also provide automated validation and checking access privileges of our users for certain API operations.
 
 2. Enabling realtime functionality to the API using GraphQL subscriptions.
 
@@ -26,7 +26,7 @@ Once we have the database connected, our tasks then turn to added more advanced 
 
 In buidling an _idiomatic_ GrahpQL server entirely from scratch, we'll be leveraging the following technologies:
 
-- `graphql-yoga`: Fully featured GraphQL server with a focus on easy setup, performance & smooth developer experience. `graphql-yoga` is built on top of [Express](), `apollo-server`, `graphql-js` and more.
+- `graphql-yoga`: Fully featured GraphQL server with a focus on easy setup, performance & smooth developer experience. `graphql-yoga` is built on top of [Express](https://expressjs.com/), [`apollo-server`](https://github.com/apollographql/apollo-server), [`graphql-js`](https://github.com/graphql/graphql-js) and more.
 
 - [Prisma](https://www.prisma.io/): Prisma replaces traditional ORM's. Use the Prisma client to execute your GraphQL resolvers and simplify database access.
 
