@@ -2,7 +2,7 @@
 
 _From The HowToGraphQL Tutorial Series_
 
-Written by Maira Bello
+Written by [Maira Bello](https://github.com/mairatma)
 
 ### Overview
 
