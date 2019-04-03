@@ -8,15 +8,23 @@ let links = [
   }
 ];
 
+let idCount = links.length;
+
 const resolvers = {
   Query: {
     info: () => `This is the API of a Hackernews Clone`,
     feed: () => links
   },
-  Link: {
-    id: parent => parent.id,
-    url: parent => parent.url,
-    description: parent => parent.description
+  Mutation: {
+    post: (parent, args) => {
+      const link = {
+        id: `link-${idCount++}`,
+        description: args.description,
+        url: args.url
+      };
+      links.push(link);
+      return link;
+    }
   }
 };
 
